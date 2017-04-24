@@ -1,0 +1,18 @@
+<h1>
+    {{title}}
+</h1>
+
+<p>Les liens 'Accueil' et 'autre' ne fonctionnent que si on s'identifie
+</p>
+
+<p>Utilisateur actuel : {{user? user.name:'anonyme'}}
+    <button *ngIf="user != null" (click)="logout()">logout</button>
+</p>
+
+
+<nav>
+    <a routerLink="/home">Accueil</a>
+    <a routerLink="/autre">autre</a>
+</nav>
+
+<router-outlet></router-outlet>

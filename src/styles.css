@@ -1,0 +1,15 @@
+html,body{
+    font-family: Arial,sans-serif;
+}
+
+nav{
+    background-color: #2ce;
+}
+
+nav a{
+    color:#fff
+}
+
+nav a:hover{
+    background-color:#d60
+}
